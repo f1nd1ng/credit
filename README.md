@@ -20,73 +20,64 @@ This project was developed using the following technologies:
 [![Gemini API](https://img.shields.io/badge/Gemini%20API-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/gemini-api/docs/api-key)  
 
 
-## Getting Started
+## Setup Instructions
 
+### Project Setup (credit/)
+1. Navigate to the base directory:
+   ```sh
+   cd credit/
+   ```
+2. Create a virtual environment:
+   ```sh
+   python -m venv venv
+   ```
+3. Activate the virtual environment:
+   - On Windows:
+     ```sh
+     venv\Scripts\activate
+     ```
+   - On macOS/Linux:
+     ```sh
+     source venv/bin/activate
+     ```
+4. Install dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+5. Create a `.env` file using `stencil.env` as a reference:
+   ```sh
+   cp stencil.env .env
+   ```
+6. Navigate to the backend directory:
+   ```sh
+   cd credit_backend/
+   ```
+7. Run database migrations:
+   ```sh
+   python manage.py migrate
+   ```
+8. Start the development server:
+   ```sh
+   python manage.py runserver
+   ```
 
-### Prerequisites 
-
-	⁠- django fromework backend
->     - Requirements
->       - Python (>= 3.x)
->       - pip (Python package manager)
->       - Virtualenv (Recommended for dependency management)
->       - Django
-
-> 
-	⁠- next.js frontend
->   - Requirements
->       - Node.js (>= 16.x recommended)
->       - npm
-
-
-### Installation
-
-	⁠- Clone the Repository
-> 
-⁠ > git clone <Repository url>
-> 
->  ⁠
-	⁠- Install Django framework
-> 
-⁠ > # Navigate to the backend directory
-> cd credit_backend
-> 
-> # Create a virtual environment(Optional but Recommended)
-> python -m venv venv
-> 
-> # Activate the virtual environment
-> # Windows:
-> venv\Scripts\activate
-> # macOS/Linux:
-> source venv/bin/activate
-> 
->  # Install dependencies
-> pip install -r requirements.txt
-> 
-> # Apply database migrations
-> python manage.py migrate
-> 
-> # Run the Django server
-> python manage.py runserver
-> 
-> #By default, the backend will run at: http://127.0.0.1:8000/
->  ⁠
-	⁠- Install npm
-> 
-⁠ > # Navigate to the frontend directory
-> cd ../credit_frontend
-> 
-> # Install dependencies
-> npm install
-> 
-> # Run the Next.js development server
-> npm run dev  
->
-> # Make sure to run at (http://localhost:3000/) due to google authentication
->  ⁠
->
-
-
+### Frontend Setup (credit_frontend/)
+1. Navigate to the frontend directory:
+   ```sh
+   cd credit_frontend/
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+5. Create a `.env.local` file using `stencil.env.local` as a reference:
+   ```sh
+   cp stencil.env.local .env.local
+   ```
+3. Start the frontend development server:
+   ```sh
+   npm run dev
+   ```
 
 
 ## Usage
