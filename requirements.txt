@@ -1,0 +1,16 @@
+Django
+requests
+djangorestframework
+django-cors-headers
+django-environ
+psycopg2-binary  
+markdown
+beautifulsoup4
+social-auth-app-django  # For Google OAuth authentication
+djangorestframework-simplejwt
+google-api-python-client
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+pandas
+python-dotenv
