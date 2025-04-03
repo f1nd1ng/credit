@@ -13,7 +13,7 @@ Cred-It is a financial management platform designed to help users track their cr
 ## Setup Instructions
 
 ### Backend Setup (credit/)
-1. Navigate to the backend directory:
+1. Navigate to the base directory:
    ```sh
    cd credit/
    ```
@@ -38,11 +38,15 @@ Cred-It is a financial management platform designed to help users track their cr
    ```sh
    cp stencil.env .env
    ```
-6. Run database migrations:
+6. Navigate to the backend directory:
+   ```sh
+   cd credit_backend/
+   ```
+7. Run database migrations:
    ```sh
    python manage.py migrate
    ```
-7. Start the development server:
+8. Start the development server:
    ```sh
    python manage.py runserver
    ```
@@ -55,6 +59,10 @@ Cred-It is a financial management platform designed to help users track their cr
 2. Install dependencies:
    ```sh
    npm install
+   ```
+5. Create a `.env.local` file using `stencil.env.local` as a reference:
+   ```sh
+   cp stencil.env.local .env.local
    ```
 3. Start the frontend development server:
    ```sh
